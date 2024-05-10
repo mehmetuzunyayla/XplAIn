@@ -41,7 +41,12 @@ def predict_and_explain(model, test_data, feature_names, original_data):
     }
     df = pd.DataFrame(data)
 
-    return df, delta, predicted.item()
+    # Map the predicted class to "Bad" or "Good"
+    class_labels = {0: "Bad", 1: "Good"}
+    predicted_label = class_labels.get(predicted.item(), "Unknown")
+
+    return df, delta, predicted_label
+
 
 def preprocess_data(new_df, categorical_columns, numerical_columns):
     # Load saved encoders and scaler
@@ -96,4 +101,4 @@ if __name__ == "__main__":
     # Print or use the explanation dataframe as needed
     print(explanation_df)
     print("Predicted class:", predicted_class)
-    #print("Convergence Delta:", convergence_delta)
+
