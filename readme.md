@@ -1,6 +1,6 @@
-# Credit Scoring CNN Project
+# Credit Scoring CNN Project with XAI
 
-This project implements a Convolutional Neural Network (CNN) for credit scoring predictions. The model is built using PyTorch and explains predictions using Captum and SHAP.
+This project implements a Convolutional Neural Network (CNN) for credit scoring predictions. The model is built using PyTorch and explains predictions using Captum and SHAP to enhance transparency and interpretability in machine learning.
 
 ## Project Structure
 
@@ -16,8 +16,8 @@ This project implements a Convolutional Neural Network (CNN) for credit scoring 
 
 1. **Clone the Repository**:
     ```bash
-    git clone https://github.com/mehmetuzunyayla/XPLAIN.git
-    cd XPLAIN
+    git clone https://github.com/mehmetuzunyayla/xplain.git
+    cd xplain
     ```
 
 2. **Install Dependencies**:
